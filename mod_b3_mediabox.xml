@@ -6,8 +6,8 @@
     <copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>hugo.fittipaldi@gmail.com</authorEmail>
-    <version>1.0.0-rc</version>
-    <description>MOD_B3_MEDIABOX_XML_DESCRIPTION</description>
+    <version>0.9.0</version>
+    <description>This module allows you to place a Bootstrap 3 modal on page load.</description>
 
     <customContent />
 
@@ -15,6 +15,12 @@
         <filename module="mod_b3_mediabox">mod_b3_mediabox.php</filename>
         <folder>tmpl</folder>
     </files>
+
+    <media folder="media" destination="mod_b3_mediabox">
+        <folder>css</folder>
+        <folder>js</folder>
+    </media>
+
     <languages>
         <language tag="en-GB">en-GB.mod_b3_mediabox.ini</language>
         <language tag="en-GB">en-GB.mod_b3_mediabox.sys.ini</language>
@@ -33,6 +39,18 @@
                     description="MOD_B3_MEDIABOX_FIELD_PREPARE_CONTENT_DESC"
                     class="btn-group btn-group-yesno"
                     default="0"
+                    >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
+                <field
+                    name="bootstrap"
+                    type="radio"
+                    label="MOD_B3_MEDIABOX_FIELD_BOOTSTRAP_LABEL"
+                    description="MOD_B3_MEDIABOX_FIELD_BOOTSTRAP_DESC"
+                    class="btn-group btn-group-yesno"
+                    default="1"
                     >
                     <option value="1">JYES</option>
                     <option value="0">JNO</option>
@@ -59,6 +77,7 @@
                     description="MOD_B3_MEDIABOX_FIELD_PADDING_DESC"
                 />
             </fieldset>
+
             <fieldset name="advanced">
                 <field
                     name="layout"

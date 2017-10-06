@@ -11,13 +11,19 @@ defined('_JEXEC') or die;
 
 $doc = JFactory::getDocument();
 
+$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
+
 if ($params->def('prepare_content', 1))
 {
     JPluginHelper::importPlugin('content');
     $module->content = JHtml::_('content.prepare', $module->content, '', 'mod_b3_mediabox.content');
 }
 
-$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
+if (!$params->def('bootstrap', 1))
+{
+    JHtml::_('stylesheet', 'mod_b3_mediabox/mod_b3_mediabox.css', ['relative' => true]);
+    JHtml::_('script', 'mod_b3_mediabox/mod_b3_mediabox.js', ['relative' => true]);
+}
 
 $width   = $params->get('width', 800) + 2;
 $height  = $params->get('height', 800) + 2;
