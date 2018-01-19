@@ -123,4 +123,8 @@
             </fieldset>
         </fields>
     </config>
+
+    <updateservers>
+        <server type="extension" priority="1" name="B3 Mediabox Module Update Site">https://raw.githubusercontent.com/hfittipaldi/mod_b3_mediabox/master/manifest.xml</server>
+    </updateservers>
 </extension>
