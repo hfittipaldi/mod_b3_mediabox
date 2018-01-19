@@ -9,6 +9,7 @@
 
 defined('_JEXEC') or die;
 
+$modal         = '.modal-open .modal { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }';
 $modal_dialog  = '#b3Mediabox .modal-dialog { width: ' . $width . 'px; max-width: calc(100vw - 20px); }';
 $modal_content = '#b3Mediabox .modal-content { overflow: hidden; }';
 $modal_body    = '#b3Mediabox .modal-body { padding: ' . $padding . 'px; }';
@@ -37,7 +38,7 @@ $modal_close = '#b3Mediabox button.close {
     background-color: #fff;
 }';
 
-$style  = $modal_dialog . $modal_content . $modal_body . $modal_close;
+$style  = $modal . $modal_dialog . $modal_content . $modal_body . $modal_close;
 $style .= "@media (max-width: 991px) { body.modal-open { padding-right: 0!important; overflow: visible; } }\n";
 
 $doc->addStyleDeclaration($style);
