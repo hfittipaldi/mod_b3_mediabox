@@ -6,7 +6,7 @@
     <copyright>Copyright (C) 2005 - 2017 Open Source Matters. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>hugo.fittipaldi@gmail.com</authorEmail>
-    <version>0.9.0</version>
+    <version>0.10.0</version>
     <description>This module allows you to place a Bootstrap 3 modal on page load.</description>
 
     <customContent />
