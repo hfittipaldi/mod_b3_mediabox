@@ -24,17 +24,7 @@
   font-family: sans-serif;
   background-color: #fff; }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   body.modal-open {
     padding-right: 0 !important;
     overflow: visible; } }
-
-body.modal-open .modal {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: -moz-box !important;
-  display: flex !important;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -moz-box-pack: center;
-  justify-content: center; }
