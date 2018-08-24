@@ -1,0 +1,55 @@
+#b3Mediabox {
+    .modal-dialog {
+        max-width: calc(100vw - 20px);
+    }
+
+    .modal-content {
+        overflow: hidden;
+    }
+
+    .modal-body {
+        p {
+            margin-bottom: 0;
+
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    button.close {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        border-radius: 3px;
+        width: 21px;
+        height: 21px;
+        overflow: hidden;
+        font-weight: 400;
+        font-family: sans-serif;
+        background-color: #fff;
+    }
+}
+
+body.modal-open {
+    @media (max-width: 991px) {
+        padding-right: 0 !important;
+        overflow: visible;
+    }
+
+    .modal {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: -moz-box !important;
+        display: flex !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -moz-box-pack: center;
+        justify-content: center;
+    }
+}
