@@ -6,7 +6,7 @@
     <copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
     <authorEmail>hugo.fittipaldi@gmail.com</authorEmail>
-    <version>0.11.2</version>
+    <version>0.12</version>
     <description>This module allows you to place a Bootstrap 3 modal on page load.</description>
 
     <customContent />
@@ -58,23 +58,34 @@
 
                 <field
                     name="width"
-                    type="text"
+                    type="number"
+                    default="800"
                     label="MOD_B3_MEDIABOX_FIELD_WIDTH_LABEL"
                     description="MOD_B3_MEDIABOX_FIELD_WIDTH_DESC"
                 />
 
                 <field
                     name="height"
-                    type="text"
+                    type="number"
+                    default="800"
                     label="MOD_B3_MEDIABOX_FIELD_HEIGHT_LABEL"
                     description="MOD_B3_MEDIABOX_FIELD_HEIGHT_DESC"
                 />
 
                 <field
-                    name="padding"
-                    type="text"
-                    label="MOD_B3_MEDIABOX_FIELD_PADDING_LABEL"
-                    description="MOD_B3_MEDIABOX_FIELD_PADDING_DESC"
+                    name="border"
+                    type="number"
+                    default="0"
+                    label="MOD_B3_MEDIABOX_FIELD_BORDER_LABEL"
+                    description="MOD_B3_MEDIABOX_FIELD_BORDER_DESC"
+                />
+
+                <field
+                    name="borderColor"
+                    type="color"
+                    default="#fff"
+                    label="MOD_B3_MEDIABOX_FIELD_BORDER_COLOR_LABEL"
+                    description="MOD_B3_MEDIABOX_FIELD_BORDER_COLOR_DESC"
                 />
             </fieldset>
 

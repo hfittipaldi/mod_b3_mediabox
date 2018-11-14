@@ -1,16 +1,19 @@
 #b3Mediabox .modal-dialog {
-  max-width: calc(100vw - 20px); }
+  max-width: calc(100vw - 1rem); }
 
 #b3Mediabox .modal-content {
   overflow: hidden; }
 
-#b3Mediabox .modal-body p {
-  margin-bottom: 0; }
-  #b3Mediabox .modal-body p:not(:first-child) {
-    margin-top: 10px; }
-  #b3Mediabox .modal-body p img {
-    max-width: 100%;
-    height: auto; }
+#b3Mediabox .modal-body {
+  padding: 0; }
+  #b3Mediabox .modal-body p {
+    margin-bottom: 0; }
+    #b3Mediabox .modal-body p:not(:first-child) {
+      margin-top: 10px; }
+    #b3Mediabox .modal-body p img {
+      max-width: 100%;
+      height: auto;
+      vertical-align: top; }
 
 #b3Mediabox button.close {
   position: absolute;
@@ -28,3 +31,5 @@
   body.modal-open {
     padding-right: 0 !important;
     overflow: visible; } }
+
+/*# sourceMappingURL=mod_b3_mediabox.css.map */
