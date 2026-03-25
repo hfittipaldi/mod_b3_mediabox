@@ -1,6 +1,15 @@
 #b3Mediabox {
+    &.modal {
+        --bs-modal-margin: 0.5rem auto;
+        --bs-modal-padding: 0;
+
+        @media (min-width: 576px) {
+            --bs-modal-margin: 1.75rem auto;
+        }
+    }
+
     .modal-dialog {
-        max-width: calc(100vw - 2rem);
+        width: min(calc(100vw - 2rem), var(--bs-modal-width));
     }
 
     .modal-content {
@@ -8,8 +17,6 @@
     }
 
     .modal-body {
-        padding: 0;
-
         p {
             margin-bottom: 0;
 
@@ -29,6 +36,8 @@
         position: absolute;
         right: 0;
         z-index: 1;
+        margin-top: 5px;
+        margin-right: 5px;
         border-radius: 3px;
         width: 21px;
         height: 21px;

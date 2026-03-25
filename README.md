@@ -1,2 +1,2 @@
-# mod_b3_mediabox
-Add a simple bootstrap 3 modal on load page
+# B3 Mediabox Module
+Add a simple Bootstrap modal on load page

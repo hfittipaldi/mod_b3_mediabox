@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.joomla.org/schemas/json-schema/web_assets.json",
+  "name": "mod_b3_mediabox",
+  "version": "1.0.0",
+  "description": "Joomla Module Tutorial",
+  "license": "GPL-2.0-or-later",
+  "assets": [
+    {
+      "name": "mod_b3_mediabox.mediabox",
+      "type": "style",
+      "uri": "mod_b3_mediabox/mod_b3_mediabox.min.css",
+      "version": "1.0.0"
+    }
+  ]
+}
