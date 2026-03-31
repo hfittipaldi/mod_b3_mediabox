@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="5.0" client="site" method="upgrade">
+<extension type="module" version="4.0" client="site" method="upgrade">
     <name>MOD_B3_MEDIABOX</name>
     <author>Hugo Fittipaldi</author>
     <creationDate>October 2017</creationDate>
-    <copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
-    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <copyright>Copyright (C) 2017 Hugo Fittipaldi. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later</license>
     <authorEmail>hugo.fittipaldi@gmail.com</authorEmail>
-    <version>1.0.0</version>
+    <authorUrl>https://github.com/hfittipaldi/mod_b3_mediabox</authorUrl>
+    <version>1.0.1</version>
     <description>MOD_B3_MEDIABOX_XML_DESCRIPTION</description>
     <namespace path="src">Joomla\Module\B3Mediabox</namespace>
     <customContent />

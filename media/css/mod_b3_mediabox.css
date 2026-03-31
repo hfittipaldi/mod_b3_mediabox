@@ -1,3 +1,15 @@
+/**
+ * B3 Mediabox Module
+ *
+ * @package     Joomla.Site
+ * @subpackage  mod_b3_mediabox
+ *
+ * @copyright   Copyright (C) 2017 Hugo Fittipaldi. All rights reserved.
+ * @license     GNU General Public License version 2 or later;
+ *
+ * @author      Hugo Fittipaldi <hugo.fittipaldi@gmail.com>
+ * @link        https://github.com/hfittipaldi/mod_b3_mediabox
+ */
 #b3Mediabox.modal {
   --bs-modal-margin: 0.5rem auto;
   --bs-modal-padding: 0;
@@ -8,16 +20,15 @@
   }
 }
 #b3Mediabox .modal-dialog {
-  width: min(100vw - 2rem, var(--bs-modal-width));
+  width: min(100vw - 2rem, var(--bs-modal-width, "800px"));
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 #b3Mediabox .modal-content {
   overflow: hidden;
 }
-#b3Mediabox .modal-body p {
+#b3Mediabox .modal-body p:last-child {
   margin-bottom: 0;
-}
-#b3Mediabox .modal-body p:not(:first-child) {
-  margin-top: 10px;
 }
 #b3Mediabox .modal-body p img {
   max-width: 100%;
@@ -39,7 +50,7 @@
   background-color: #fff;
 }
 
-@media (max-width: 991.98px) {
+@media (width < 992px) {
   body.modal-open {
     padding-right: 0 !important;
     overflow: visible;
